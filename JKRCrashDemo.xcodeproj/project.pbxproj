@@ -15,7 +15,7 @@
 		431D63051DC055E2004E45D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431D63031DC055E2004E45D6 /* LaunchScreen.storyboard */; };
 		431D63101DC055E2004E45D6 /* JKRCrashDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 431D630F1DC055E2004E45D6 /* JKRCrashDemoTests.m */; };
 		431D631B1DC055E3004E45D6 /* JKRCrashDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 431D631A1DC055E3004E45D6 /* JKRCrashDemoUITests.m */; };
-		431D63491DC06577004E45D6 /* JKRCrash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 431D63481DC06577004E45D6 /* JKRCrash.a */; };
+		431D638F1DC08EC8004E45D6 /* JKRCrash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 431D638D1DC08EC8004E45D6 /* JKRCrash.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		431D63161DC055E2004E45D6 /* JKRCrashDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKRCrashDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		431D631A1DC055E3004E45D6 /* JKRCrashDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKRCrashDemoUITests.m; sourceTree = "<group>"; };
 		431D631C1DC055E3004E45D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		431D63281DC05C36004E45D6 /* JKRCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCrash.h; sourceTree = "<group>"; };
-		431D63481DC06577004E45D6 /* JKRCrash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = JKRCrash.a; sourceTree = SOURCE_ROOT; };
+		431D638D1DC08EC8004E45D6 /* JKRCrash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = JKRCrash.a; sourceTree = "<group>"; };
+		431D638E1DC08EC8004E45D6 /* JKRCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCrash.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				431D63491DC06577004E45D6 /* JKRCrash.a in Frameworks */,
+				431D638F1DC08EC8004E45D6 /* JKRCrash.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,12 +109,11 @@
 				431D62F91DC055E1004E45D6 /* AppDelegate.m */,
 				431D62FB1DC055E2004E45D6 /* ViewController.h */,
 				431D62FC1DC055E2004E45D6 /* ViewController.m */,
-				431D63481DC06577004E45D6 /* JKRCrash.a */,
-				431D63281DC05C36004E45D6 /* JKRCrash.h */,
 				431D62FE1DC055E2004E45D6 /* Main.storyboard */,
 				431D63011DC055E2004E45D6 /* Assets.xcassets */,
 				431D63031DC055E2004E45D6 /* LaunchScreen.storyboard */,
 				431D63061DC055E2004E45D6 /* Info.plist */,
+				431D638C1DC08EC8004E45D6 /* JKRCrash */,
 				431D62F51DC055E1004E45D6 /* Supporting Files */,
 			);
 			path = JKRCrashDemo;
@@ -144,6 +143,15 @@
 				431D631C1DC055E3004E45D6 /* Info.plist */,
 			);
 			path = JKRCrashDemoUITests;
+			sourceTree = "<group>";
+		};
+		431D638C1DC08EC8004E45D6 /* JKRCrash */ = {
+			isa = PBXGroup;
+			children = (
+				431D638D1DC08EC8004E45D6 /* JKRCrash.a */,
+				431D638E1DC08EC8004E45D6 /* JKRCrash.h */,
+			);
+			path = JKRCrash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +444,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JKRCrashDemo",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/JKRCrashDemo/JKRCrash",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = joker.JKRCrashDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +461,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JKRCrashDemo",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/JKRCrashDemo/JKRCrash",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = joker.JKRCrashDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

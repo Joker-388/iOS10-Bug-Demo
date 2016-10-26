@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UserNotifications/UserNotifications.h>
 
 @interface JKRCrash : NSObject
 
-+ (void)crash;
++ (void)crashReady;
++ (void)crashRightNow;
 
 @end

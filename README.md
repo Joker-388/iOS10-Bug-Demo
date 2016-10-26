@@ -6,8 +6,10 @@ iOS10-Bug-Demo
 
 友情提示：千万别在真机跑，不然真机也会无限重启，而且不能够恢复，因为无限重启的过程手机是无法解锁的，连接不上Xcode和iTunes，不能够通过调试卸载掉错误的app。
 
+<br/>
+---
 使用方法：
-
+==============
 1.点击准备按钮，同意app发送通知。<br>
 2.点击开始按钮，app崩溃，设备无限黑屏重启。<br>
 
@@ -15,5 +17,5 @@ iOS10-Bug-Demo
 ---
 English
 ==============
-1.Click ready button, allow app authorization.
-2.Click start button, app clash, and device restart again and again.
+1.Click ready button, allow app authorization.<br>
+2.Click start button, app clash, and device restart again and again.<br>

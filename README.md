@@ -22,7 +22,7 @@ iOS10-Bug-Demo
 English
 ==============
 Let ios10 crash and restart by circle. You can try it both on simulator and device.<br>
-Tip: If you run it on device, you can only reinstall the system with iTunes. 
+Tip: If you run it on device, you can only reinstall the system with iTunes. <br>
 1.Click ready button, allow app authorization.<br>
 2.Click start button, app clash, and device restart again and again.<br>
 <br/>

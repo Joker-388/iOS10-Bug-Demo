@@ -3,9 +3,9 @@ iOS10-Bug-Demo
 [![preview](https://travis-ci.org/Joker-388/MessageImageCategory.svg?branch=master)](http://www.sixstr.me)&nbsp;<br><br>
 [![preview](https://github.com/Joker-388/iOS10-Bug-Demo/blob/master/Preview/crash1.gif)](http://www.sixstr.me)&nbsp;
 <br><br>
-新的通知框架UserNotification在调试的时候发现一个问题，之前调试代码的时候如果写错了最多时app自己crash，而这个框架会让iOS系统崩溃无限黑屏重启，这里分享一下Demo，给位朋友在虚拟机跑跑试一下，无限重启后选择虚拟机reset content and settings就可以恢复。
+让iOS系统崩溃无限黑屏重启，这里分享一下Demo，给位朋友在虚拟机跑跑试一下，无限重启后选择虚拟机reset content and settings就可以恢复。
 
-友情提示：别在真机跑，不然真机也会无限重启。
+友情提示：别在真机跑，不然真机也会无限重启，只能通过iTunes调试模式重新刷机恢复，数据未备份会全部丢失。
 
 觉得好玩顺手点一个star，前期说谢谢啦。
 ==============

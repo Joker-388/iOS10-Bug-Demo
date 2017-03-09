@@ -3,7 +3,7 @@ iOS10-Bug-Demo
 [![preview](https://travis-ci.org/Joker-388/MessageImageCategory.svg?branch=master)](http://www.jianshu.com/u/95d5ea0acd19)&nbsp;<br><br>
 [![preview](https://github.com/Joker-388/iOS10-Bug-Demo/blob/master/Preview/crash1.gif)](http://www.jianshu.com/u/95d5ea0acd19)&nbsp;
 <br><br>
-让iOS系统崩溃无限黑屏重启，这里分享一下Demo，建议在虚拟机跑，无限重启后选择虚拟机reset content and settings就可以恢复。
+这个是我在研究iOS10添加的新特性时候无意发现了一个系统漏洞，可以让iOS黑屏重启，经过了简单的优化，能让iOS系统立即崩溃并无限黑屏重启，这里分享一下Demo，建议在虚拟机跑，无限重启后选择虚拟机reset content and settings就可以恢复。
 
 友情提示：别在真机跑，不然真机也会无限重启，只能通过iTunes调试模式重新刷机恢复，数据未备份会全部丢失。
 

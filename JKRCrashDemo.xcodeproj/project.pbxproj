@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		055A05F01E91041400025BDE /* JKRCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 055A05EF1E91041400025BDE /* JKRCrash.m */; };
 		431D62F71DC055E1004E45D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 431D62F61DC055E1004E45D6 /* main.m */; };
 		431D62FA1DC055E1004E45D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 431D62F91DC055E1004E45D6 /* AppDelegate.m */; };
 		431D62FD1DC055E2004E45D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 431D62FC1DC055E2004E45D6 /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		431D63051DC055E2004E45D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431D63031DC055E2004E45D6 /* LaunchScreen.storyboard */; };
 		431D63101DC055E2004E45D6 /* JKRCrashDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 431D630F1DC055E2004E45D6 /* JKRCrashDemoTests.m */; };
 		431D631B1DC055E3004E45D6 /* JKRCrashDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 431D631A1DC055E3004E45D6 /* JKRCrashDemoUITests.m */; };
-		431D638F1DC08EC8004E45D6 /* JKRCrash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 431D638D1DC08EC8004E45D6 /* JKRCrash.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		055A05EF1E91041400025BDE /* JKRCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRCrash.m; sourceTree = "<group>"; };
 		431D62F21DC055E1004E45D6 /* JKRCrashDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKRCrashDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		431D62F61DC055E1004E45D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		431D62F81DC055E1004E45D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		431D63161DC055E2004E45D6 /* JKRCrashDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKRCrashDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		431D631A1DC055E3004E45D6 /* JKRCrashDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKRCrashDemoUITests.m; sourceTree = "<group>"; };
 		431D631C1DC055E3004E45D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		431D638D1DC08EC8004E45D6 /* JKRCrash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = JKRCrash.a; sourceTree = "<group>"; };
 		431D638E1DC08EC8004E45D6 /* JKRCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRCrash.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				431D638F1DC08EC8004E45D6 /* JKRCrash.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +147,8 @@
 		431D638C1DC08EC8004E45D6 /* JKRCrash */ = {
 			isa = PBXGroup;
 			children = (
-				431D638D1DC08EC8004E45D6 /* JKRCrash.a */,
 				431D638E1DC08EC8004E45D6 /* JKRCrash.h */,
+				055A05EF1E91041400025BDE /* JKRCrash.m */,
 			);
 			path = JKRCrash;
 			sourceTree = "<group>";
@@ -288,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				431D62FD1DC055E2004E45D6 /* ViewController.m in Sources */,
+				055A05F01E91041400025BDE /* JKRCrash.m in Sources */,
 				431D62FA1DC055E1004E45D6 /* AppDelegate.m in Sources */,
 				431D62F71DC055E1004E45D6 /* main.m in Sources */,
 			);
